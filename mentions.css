@@ -1,0 +1,100 @@
+body
+{
+	margin: 0px;
+	padding-bottom: 60px;
+}
+header, footer
+{
+	background: #579c87;
+	color: #fdcb46;
+}
+header
+{ 
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 2%;
+	font-size: 50px;
+}
+a
+{
+color:inherit;
+text-decoration: none;
+}
+.hoche:hover
+{
+	color:inherit;
+	text-decoration: none;
+	animation:hoche 1s infinite;
+}
+@keyframes hoche{
+	0%
+	{
+		transform: rotate(0deg);
+	}
+	3%
+	{
+		transform: rotate(-2deg);
+	}
+	4%
+	{
+			transform: rotate(2deg);
+	}
+	5%
+	{
+			transform: rotate(0deg);
+	}
+	100%
+	{
+			transform: rotate(0deg);
+	}
+}
+.mention
+{
+	display:flex;
+	flex-direction: column;
+	margin: auto;
+	border:solid black 2px;
+	width: 60%;
+	padding: 10px 10px 10px;
+}
+h3,h2
+{
+	text-align: center;
+}
+.trait
+{
+	position: relative;
+}
+.trait:after
+{
+	content: "";
+	position: absolute;
+	border-bottom: solid black 2px;
+	bottom: 0;
+	left: 0;
+	right: 100%;
+	transition:all 800ms;
+}
+.trait:hover:after
+{
+	right: 0%;
+}
+footer
+{
+	display: flex;
+	height: 50px;
+	align-items: center;
+	justify-content: space-between;
+	bottom: 0;
+	position: fixed;
+	width: 100%;
+}
+@media all and (max-width:425px)
+{
+	header
+	{
+		font-size: 25px;
+	}
+}
