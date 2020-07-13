@@ -1,22 +1,3 @@
-body
-{
-	margin: 0px;
-	padding-bottom: 60px;
-}
-header, footer
-{
-	background: #579c87;
-	color: #fdcb46;
-}
-header
-{ 
-	height: 100px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-bottom: 2%;
-	font-size: 50px;
-}
 .centre
 {
 	display: flex;
@@ -34,11 +15,6 @@ header
 	-webkit-background-clip:text;
 	-webkit-text-fill-color: transparent;
 	background-image: -webkit-linear-gradient(left,#f15861,#f78f6a);
-}
-a
-{
-color:inherit;
-text-decoration: none;
 }
 .menu
 {
@@ -128,23 +104,16 @@ text-decoration: none;
 	background-color: #579c87;
 	color:#fdcb46;
 	display: flex;
+	font-family: arial;
+	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	border-radius: 10%;
+	border-radius:10px;
 	margin: auto;
-	height: 40px;
-	width: 200px;
-}
-footer
-{
-	display: flex;
-	height: 50px;
-	align-items: center;
-	justify-content: space-between;
-	bottom: 0;
-	width: 100%;
-	position: fixed;
-	margin-top: 30px;
+	margin-bottom: 40px;
+	height: 55px;
+	width: 40%;
+	font-size: 35px;
 }
 .taille
 {
@@ -180,13 +149,13 @@ footer
 .effet
 {
 	display: flex;
+	font-size: 40px;
+	flex-direction: row;
 	opacity:1;  
 	animation-name: effet ;
-	animation-delay: 2s;
 	animation-duration: 2s;
 	animation-timing-function: ease-out;
-	animation-iteration-count:infinite; 
-	animation-direction: ;
+	animation-iteration-count:infinite; 	
 }
 @keyframes effet {
 	0% 
@@ -201,7 +170,6 @@ footer
 .point1
 {
 	animation-delay:200ms;
-	
 }
 .point2
 {
@@ -213,34 +181,6 @@ footer
 	animation-delay: 600ms;
 	
 }
-.hoche:hover
-{
-	animation: hoche  1s infinite;
-}
-@keyframes hoche
-{
-	0%
-	{
-		transform: rotate(0deg);
-	}
-	3%
-	{
-		transform: rotate(-4deg);
-	}
-	4%
-	{
-			transform: rotate(4deg);
-	}
-	5%
-	{
-			transform: rotate(0deg);
-	}
-	100%
-	{
-			transform: rotate(0deg);
-	}
-}
-
 @media all and (max-width: 950px)
 {
 
@@ -265,9 +205,17 @@ footer
 	{
 	transform: scale(1.1);
 	}
-	.centre
+	.icone-music
 	{
-		height: 800px;
+		font-size: 30px;
+	}
+	.venir
+	{
+		font-size: 20px;
+	}
+	.effet
+	{
+		font-size: 20px;
 	}
 }
 @media all and (max-width: 425px)
@@ -288,8 +236,24 @@ footer
 	}
 	.menu
 	{
-		width: 100%;
-		height:30%;
+		width: 85%;
+		height:45%;
 		padding: 5px;
+	}
+	.icone-music
+	{
+		font-size: 20px;
+	}
+	.taille
+	{
+	font-size: 25px;
+	}
+	.venir
+	{
+		font-size: 15px;
+	}
+	.effet
+	{
+		font-size: 15px;
 	}
 }

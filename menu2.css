@@ -1,43 +1,5 @@
-body
-{
-	margin: 0px;
-	padding-bottom: 60px;
-}
-header, footer
-{
-	background: #579c87;
-	color: #fdcb46;
-}
-header
-{ 
-	height: 100px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-bottom: 2%;
-	font-size: 50px;
-}
-a
-{
-	text-decoration: none;
-	color: inherit;
-}
-.ohmyfood
-{
-	text-decoration: none;
-	font-size: 50px;
-	text-align: center;
-	width: 100%;
-}
-h2
-{
-	text-align: center;
-	font-size: 40px;
-}
 h3
-{
-	font-size: 50px; 
-	text-align: center;
+{ 
 	-webkit-background-clip:text;
 	-webkit-text-fill-color: transparent;
 	background-image: -webkit-linear-gradient(left,#d17f45,#a667bf,#8f5bf6);
@@ -46,123 +8,30 @@ h3
 h4
 {
 	font-weight: bold;
-	text-align: center;
 	width: 40%;
-	font-size: 30px;
-	color:inherit;
-	text-decoration: none;
+	font-size: 35px;
 }
-.animateborder
+.menu
 {
-	position: relative;
-}
-.animateborder:after
-{
-	content:"";
- 	position: absolute;
- 	border-bottom: 3px solid black;
- 	bottom: 0;
- 	left:0;
- 	right: 100%;
- 	transition: all 800ms;
-}
-.animateborder:hover:after
-{
-	right: 0;
-}
-.titre1:after
-{
-	border-bottom-color: #cd8430;
-}
-.titre2:after
-{
-border-bottom-color: #a56799;
-}
-.titre3:after
-{
-	border-bottom-color: #6e4ccc;
-}
-.menu2
-{
-	display: flex;
 	background-color: #fff5fe;
-	border: grey;
-	box-shadow: 6px 6px 6px lightgrey;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	width: 85%;
-	margin: auto;
-	padding-top: 20px;
-}
-.menu2b
-{
-	display: flex;
-	flex-direction: column;
 	font-size: 25px;
-	width: 100%;
-	margin: auto;
-	align-items: center;
+}
+.p
+{
+	width: 80%;
+	 padding-bottom: 20px;
 }
 .p1
 {
     color: #cd8430;
-    width:80%;
-    padding-bottom: 20px;
 }
 .p2
 {
 	color:#a56799;
-	width: 80%;
-	padding-bottom: 20px;
 }
 .p3
 {
 	color:#6e4ccc;
-	width: 80%;
-	padding-bottom: 20px;
-}
-span
-{
-	font-weight: bold;
-}
-.pied
-{
-	font-size: 25px;
-	width: 100%;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-}
-.hoche
-{
-
-}
-.hoche:hover
-{
-	animation: hoche 1s infinite;
-}
-@keyframes hoche{
-	0%
-	{
-		transform: rotate(0deg);
-	}
-	3%
-	{
-		transform: rotate(-2deg);
-	}
-	4%
-	{
-		transform: rotate(2deg);
-	}
-	5%
-	{
-		transform: rotate(0deg);
-	}
-	100%
-	{
-		transform: rotate(0deg);
-	}
 }
 .barre
 {
@@ -177,33 +46,12 @@ span
 height: 40%;
 width: 30%;
 }
-.liste
+.menu1
 {
-	width: 90%;
-}
-.menu
-{
-	display: flex;
-	flex-direction: row;
-	align-items: center;
 	margin-left: 10%;
-}
-footer
-{
-	display: flex;
-	height: 50px;
-	width: 100%;
-	align-items: center;
-	position: fixed;
-	bottom: 0;
-	width: 100%;
 }
 @media all and (max-width:950px)
 {
-	.ohmyfood
-	{
-		font-size: 30px;
-	}
 	h3
 	{
 		font-size: 35px;
@@ -212,19 +60,16 @@ footer
 	{
 		font-size: 30px;
 	}
-	.menu2b
-	{
-		font-size: 25px;
-	}
 }
 @media all and (max-width: 600px)
 {
-	.menu
+	.menu1
 	{
 		flex-direction: column;
 	}
-	
-	
-
+	h4
+	{
+		font-size: 25px;
+	}
 	
 }
