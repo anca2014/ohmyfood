@@ -1,74 +1,13 @@
-body
-{
-	padding-bottom: 60px;
-	margin: 0px;
-	height: 100%;
-}
-header,footer
-{
-	background: #579c87;
-	color: #fdcb46;
-}
-header
-{ 
-	height: 100px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-bottom: 2%;
-	font-size: 50px;
-}
-.ohmyfood
-{
-	text-decoration: none;
-	font-size: 50px;
-	text-align: center;
-	width: 100%;
-}
-h2
-{
-	text-align: center;
-	font-size: 65px;
-}
 h3
 {
 	font-family: 'Devonshire', cursive;
-	font-size: 55px;
-	text-align: center;
-}
-a
-{
-	color: inherit;
-	text-decoration: none;
 }
 h4
 {
 	padding: 10px;
 	font-size: 40px;
 	width: 300px;
-	text-align: center;
-	color: inherit;
-	text-decoration: none;
 }
-.animateborder
-{
-	position: relative;
-}
- .animateborder:after
- {
- 	content:"";
- 	position: absolute;
- 	border-bottom: 3px solid black;
- 	bottom: 0;
- 	left:0;
- 	right: 100%;
- 	transition: all 800ms;
- }
- .animateborder:hover:after
- {
- 	right: 0;
- }
-
 .icone-music
 {
 	display: flex;
@@ -79,40 +18,11 @@ h4
 	-webkit-text-fill-color: transparent;
 	background-image: -webkit-linear-gradient(left,#f15861,#f78f6a);
 }
-.menu1b
-{
-	display:flex;
-	background-color: mistyrose;
-	border:grey;
-	box-shadow: 6px 6px 6px 6px lightgrey;
-	flex-direction: column;
-	align-items: center;
-	width: 85%;
-	margin: auto;
-	padding-top: 20px;
-	font-family: 'Dancing Script', cursive;
-}
-span
-{
-	font-weight: bold;
-	width: 10%;
-}
-.liste
-{
-	width:90%;
-}
-.repas
-{
-	display: flex;
-	flex-direction: row;
-	font-size:35px;
-}
 .menu
 {
-	display: flex;
-	flex-direction: column;
-	width: 80%;
-	justify-content: space-between;
+	font-size: 30px;
+	font-family: 'Dancing Script', cursive;
+	background-color: #fcdfdb;
 }
 .barre
 {
@@ -128,58 +38,21 @@ span
 	align-items: center;
 	width:80%;
 }
+.repas
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	justify-content: space-between;
+}
 p
 {
 	font-size: 35px;
 	width: 80%;
 }
-.hoche:hover
-{
-	color:inherit;
-	text-decoration: none;
-	animation: hoche 1s infinite;
-}
-@keyframes hoche{
-	0%
-	{
-		transform: rotate(0deg);
-	}
-	3%
-	{
-		transform: rotate(-2deg);
-	}
-	4%
-	{
-			transform: rotate(2deg);
-	}
-	5%
-	{
-			transform: rotate(0deg);
-	}
-	100%
-	{
-			transform: rotate(0deg);
-	}
-}
-footer
-{
-	display: flex;
-	flex-direction: row;
-	height: 50px;
-	font-size: 25px;
-	align-items: center;
-	justify-content: space-between;
-	position: fixed;
-	bottom: 0px;
-	width: 100%;
-	margin-top: 30px;
-}
 @media all and (max-width: 950px)
 {
-	.ohmyfood
-	{
-		font-size: 30px;
-	}
 	h2
 	{
 		font-size: 40px;
@@ -188,7 +61,7 @@ footer
 	{
 	    font-size: 25px;
 	}
-	.repas
+	.menu1
 	{
 		font-size:25px;
 	}
@@ -199,10 +72,6 @@ footer
 }
 @media all and (max-width: 425px)
 {
-	.ohmyfood
-	{
-		font-size:25px;
-	}
 	h2
 	{
 		font-size: 30px;
@@ -215,10 +84,9 @@ footer
 	{
 		font-size: 30px;
 	}
-	.repas
+	p
 	{
-		flex-direction: column;
-		align-items: center;
+		text-align: center;
 	}
 	footer
 	{

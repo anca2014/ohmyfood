@@ -1,0 +1,69 @@
+body
+{
+	margin: 0px;
+	padding-bottom: 60px;
+}
+header, footer
+{
+	background: #579c87;
+	color: #fdcb46;
+}
+header
+{ 
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 2%;
+	font-size: 50px;
+}
+a
+{
+color:inherit;
+text-decoration: none;
+}
+.hoche
+{
+	margin-left: 15px;
+	margin-right: 15px;
+}
+.hoche:hover
+{
+	animation:hoche 1500ms infinite;
+}
+@keyframes hoche{
+	0%
+	{
+		transform: rotate(0deg);
+	}
+	3%
+	{
+		transform: rotate(-16deg);
+	}
+	4%
+	{
+			transform: rotate(16deg);
+	}
+	5%
+	{
+			transform: rotate(0deg);
+	}
+	100%
+	{
+			transform: rotate(0deg);
+	}
+}
+h3,h2
+{
+	text-align: center;
+}
+footer
+{
+	display: flex;
+	height: 50px;
+	align-items: center;
+	justify-content: space-between;
+	bottom: 0;
+	position: fixed;
+	width: 100%;
+}
